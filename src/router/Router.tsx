@@ -19,7 +19,7 @@ function Router() {
               backgroundColor: '#fff',
             },
           }}>
-          <Drawer.Screen name="App" options={{}} component={MainTabs} />
+          <Drawer.Screen name="PocketBud" options={{}} component={MainTabs} />
           <Drawer.Screen name="Profile" component={Profile} />
         </Drawer.Navigator>
       </NavigationContainer>

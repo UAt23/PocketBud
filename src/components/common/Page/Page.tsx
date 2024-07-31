@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, ViewStyle, ViewProps} from 'react-native';
+import styles from '../../../styles/common/common';
 
 interface PageProps extends ViewProps {
   backgroundColor?: ViewStyle['backgroundColor'];
@@ -14,7 +15,7 @@ const Page: React.FC<PageProps> = ({
   borderRadius = 0,
   padding = 20,
   margin = 0,
-  style,
+  style = styles.pageContainer,
   children,
   ...rest
 }) => {

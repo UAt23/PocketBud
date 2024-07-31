@@ -7,3 +7,10 @@
 %card-shadow {
    box-shadow: 0px 4px 10px #F1F5F9;
 }
+
+.pageContainer {
+   display: flex;
+   gap: 1.5625rem;
+   @extend %base-class;
+   
+}

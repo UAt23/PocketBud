@@ -3,6 +3,7 @@ import {View} from 'react-native';
 import {CustomText} from '../common';
 import Transaction from '../Transaction/Transaction';
 import styles from './styles.scss';
+import CustomInput from '../common/CustomInput/CustomInput';
 
 const TransactionList = () => {
   return (
@@ -11,6 +12,9 @@ const TransactionList = () => {
         <CustomText>Transactions</CustomText>
       </View>
       <View style={styles.listWrapper}>
+        <Transaction />
+        <Transaction />
+        <Transaction />
         <Transaction />
       </View>
     </View>

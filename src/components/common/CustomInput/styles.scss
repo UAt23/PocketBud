@@ -1,0 +1,59 @@
+// CustomInput.module.scss
+.inputContainer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1.5rem;
+
+   padding: .625rem;
+   background-color: #EEF2F6;
+   border-radius: .5rem;
+   width: 100%;
+}
+
+.labelText {
+   font-size: 18px;
+   color: #3A506F;
+   font-weight: 600;
+   padding: .3125rem 0;
+}
+
+.inputWrapper {
+   width: 100%;
+}
+
+.inputField {
+   display: flex;
+   font-size: 18px;
+   color: #333;
+   border: none;
+   border-radius: .25rem;
+   background-color: transparent;
+   padding: .3125rem 0;
+   
+
+}
+
+.inputActive {
+   background-color: white;
+}
+
+.placeholderText {
+   position: absolute;
+   font-size: 18px;
+   color: #aaa;
+}
+
+.errorText {
+   color: red;
+   margin-top: 5px;
+   font-size: 14px;
+}
+
+.valueText {
+   font-size: 18px;
+   color: #007bff;
+   text-align: right;
+   flex: 1;
+}
