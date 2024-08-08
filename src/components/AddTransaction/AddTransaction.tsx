@@ -31,13 +31,13 @@ const AddTransaction = () => {
         animationType="spring">
         <TabView.Item>
           <View style={[styles.tabPage, index === 0 && styles.tabShow]}>
-            <CustomInput label="Main Account" />
-            <CustomInput label="Select Category" />
+            <CustomInput label="Choose Account" />
+            <CustomInput label="Choose Category" />
           </View>
         </TabView.Item>
         <TabView.Item>
           <View style={[styles.tabPage, index === 1 && styles.tabShow]}>
-            <CustomInput placeholder="select account" label="Main Account" />
+            <CustomInput placeholder="select account" label="Select Account" />
             <CustomInput label="Select Category" />
           </View>
         </TabView.Item>

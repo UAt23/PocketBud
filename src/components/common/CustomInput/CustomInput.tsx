@@ -39,7 +39,6 @@ const CustomInput: React.FC<CustomInputProps> = ({
         <View style={{flex: 1}}>
           <TextInput
             ref={inputRef}
-            textAlign={isFocused ? 'left' : 'right'}
             style={[styles.inputField, isFocused && styles.inputActive]}
             onFocus={handleFocus}
             onBlur={handleBlur}

@@ -1,26 +1,24 @@
 // CustomInput.module.scss
 .inputContainer {
    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   gap: 1.5rem;
+   flex-direction: column;
+   align-items: flex-start;
 
    padding: .625rem;
-   background-color: #EEF2F6;
    border-radius: .5rem;
    width: 100%;
 }
 
 .labelText {
-   font-size: 18px;
+   font-size: 16px;
    color: #3A506F;
-   font-weight: 600;
+   font-weight: 500;
    padding: .3125rem 0;
 }
 
 .inputWrapper {
    width: 100%;
+   height: fit-content;
 }
 
 .inputField {
@@ -29,14 +27,18 @@
    color: #333;
    border: none;
    border-radius: .25rem;
-   background-color: transparent;
+   background-color: #EEF2F6;
    padding: .3125rem 0;
-   
+   min-width: 100%;
+   height: 3rem;
+   padding: 4px;
+   font-size: 14px;
 
 }
 
 .inputActive {
    background-color: white;
+   border: 3px solid #EEF2F6;
 }
 
 .placeholderText {
