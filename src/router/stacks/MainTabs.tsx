@@ -11,7 +11,10 @@ function MainTabs() {
     <Tab.Navigator>
       <Tab.Screen
         name="HomeRoutes"
-        options={{headerShown: false, title: 'Home'}}
+        options={{
+          headerShown: false,
+          title: 'Home',
+        }}
         component={HomeStack}
       />
       <Tab.Screen

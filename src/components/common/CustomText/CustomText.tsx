@@ -13,7 +13,7 @@ const CustomText: React.FC<CustomTextProps> = ({
   children,
   fontWeight = 'normal',
   fontSize = 14,
-  fontColor = '#000',
+  fontColor = '#484A4B',
   style,
 }) => {
   const combinedStyle: TextStyle = {

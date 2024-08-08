@@ -1,22 +1,37 @@
 import React from 'react';
-import {View} from 'react-native';
+import {ScrollView, View} from 'react-native';
 import {CustomText} from '../common';
 import Transaction from '../Transaction/Transaction';
 import styles from './styles.scss';
-import CustomInput from '../common/CustomInput/CustomInput';
 
 const TransactionList = () => {
+
+  // const callData = async () => {
+  //   // const {data, error} = await supabase.from('Category').select('*');
+  // };
+
   return (
     <View style={styles.wrapper}>
       <View style={styles.header}>
-        <CustomText>Transactions</CustomText>
+        <CustomText fontSize={18} fontWeight={'700'} fontColor={'#484A4B80'}>
+          Transactions
+        </CustomText>
       </View>
-      <View style={styles.listWrapper}>
+      <ScrollView style={styles.listWrapper}>
         <Transaction />
         <Transaction />
         <Transaction />
         <Transaction />
-      </View>
+        <Transaction />
+        <Transaction />
+        <Transaction />
+        <Transaction />
+        <Transaction />
+        <Transaction />
+        <Transaction />
+        <Transaction />
+        <Transaction />
+      </ScrollView>
     </View>
   );
 };

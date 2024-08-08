@@ -1,0 +1,29 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Neuton-Bold.ttf",
+      "sha1": "885119ffe1aadbfb9ec2d2fba11d567e79851db1"
+    },
+    {
+      "path": "src/assets/fonts/Neuton-ExtraBold.ttf",
+      "sha1": "055901bb572df0b3e76b239e599d6ad39b6b5b5c"
+    },
+    {
+      "path": "src/assets/fonts/Neuton-ExtraLight.ttf",
+      "sha1": "cb7457b3bc5fdb27bcc96e0b767206f7ac01e87b"
+    },
+    {
+      "path": "src/assets/fonts/Neuton-Italic.ttf",
+      "sha1": "4fffa6249e095a5fedd2712fe418b11828e473df"
+    },
+    {
+      "path": "src/assets/fonts/Neuton-Light.ttf",
+      "sha1": "82f29d8872daad279b507916bb139d1ab564bf0e"
+    },
+    {
+      "path": "src/assets/fonts/Neuton-Regular.ttf",
+      "sha1": "f188bc800479c2e2ad94880929ab0e4742a4b0d7"
+    }
+  ]
+}
