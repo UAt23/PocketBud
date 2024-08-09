@@ -1,5 +1,5 @@
 .incomeButton {
-   border-color: #CDD7E5;
+   border-color: #7294B6;
    border-width: 4px;
    border-right-width: 0;
    border-top-left-radius: 8px;
@@ -7,7 +7,7 @@
 }
 
 .expenseButton {
-   border-color: #CDD7E5;
+   border-color: #7294B6;
    border-width: 4px;
    border-left-width: 0;
    border-top-right-radius: 8px;
@@ -15,7 +15,7 @@
 }
 
 .active {
-   background-color: #CDD7E5;
+   background-color: #7294B6;
 }
 
 .tabTitle {
@@ -24,13 +24,18 @@
    font-weight: 700;
 }
 
+.tabTitleActive {
+   color: #F2F5F8
+}
+
 .tabPage {
    opacity: 0;
+   padding: 0 .625rem;
 }
 
 .tabShow {
    display: flex;
-   gap: 2.25rem;
+   gap: 1.25rem;
    height: 100%;
    width: 100%;
 

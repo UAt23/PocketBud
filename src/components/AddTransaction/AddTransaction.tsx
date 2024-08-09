@@ -1,9 +1,10 @@
-import {Text, View} from 'react-native';
+import {Text, TextInput, View} from 'react-native';
 import React from 'react';
 import {CustomText, Page} from '../common';
 import {Tab, TabView} from '@rneui/themed';
 import styles from './styles';
 import CustomInput from '../common/CustomInput/CustomInput';
+import CustomSelector from '../common/CustomSelector';
 
 const AddTransaction = () => {
   const [index, setIndex] = React.useState(0);
@@ -14,12 +15,12 @@ const AddTransaction = () => {
         <Tab.Item
           buttonStyle={[styles.incomeButton, index === 0 && styles.active]}
           title="Income"
-          titleStyle={styles.tabTitle}
+          titleStyle={[styles.tabTitle, index === 0 && styles.tabTitleActive]}
         />
         <Tab.Item
           buttonStyle={[styles.expenseButton, index === 1 && styles.active]}
           title="Expense"
-          titleStyle={styles.tabTitle}
+          titleStyle={[styles.tabTitle, index === 1 && styles.tabTitleActive]}
         />
       </Tab>
 
@@ -31,8 +32,10 @@ const AddTransaction = () => {
         animationType="spring">
         <TabView.Item>
           <View style={[styles.tabPage, index === 0 && styles.tabShow]}>
-            <CustomInput label="Account" />
-            <CustomInput label="Category" />
+            <CustomInput label="Enter Amount" />
+            <CustomSelector label="Select Account" />
+            <CustomSelector label="Select Category" />
+            <CustomSelector label="Select Date" />
           </View>
         </TabView.Item>
         <TabView.Item>

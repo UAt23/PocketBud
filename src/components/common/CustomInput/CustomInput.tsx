@@ -1,12 +1,6 @@
 // CustomInput.tsx
 import React, {useState, useRef} from 'react';
-import {
-  TextInput,
-  View,
-  Text,
-  TextInputProps,
-  TouchableWithoutFeedback,
-} from 'react-native';
+import {TextInput, View, Text, TextInputProps} from 'react-native';
 import styles from './styles';
 
 interface CustomInputProps extends TextInputProps {
@@ -27,15 +21,11 @@ const CustomInput: React.FC<CustomInputProps> = ({
 
   const handleFocus = () => setIsFocused(true);
   const handleBlur = () => setIsFocused(false);
-  const handlePress = () => inputRef.current?.focus();
   const textChange = (newText: string) => setTextValue(newText);
-
   return (
     <View style={styles.inputContainer}>
       <Text style={styles.labelText}>{label}</Text>
-      <TouchableWithoutFeedback
-        style={styles.inputWrapper}
-        onPress={handlePress}>
+      <View style={styles.inputWrapper}>
         <View style={{flex: 1}}>
           <TextInput
             ref={inputRef}
@@ -50,7 +40,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
             <Text style={styles.placeholderText}>{placeholder}</Text>
           )}
         </View>
-      </TouchableWithoutFeedback>
+      </View>
       {errorMessage && <Text style={styles.errorText}>{errorMessage}</Text>}
     </View>
   );

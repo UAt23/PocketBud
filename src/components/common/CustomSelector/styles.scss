@@ -1,0 +1,15 @@
+.container {
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 16px;
+   border-radius: 10px;
+   background-color: #E7F2FD;
+}
+
+.label {
+   font-size: 16px;
+   font-weight: 500;
+   text-transform: capitalize;
+   color: #484A4B;
+}
