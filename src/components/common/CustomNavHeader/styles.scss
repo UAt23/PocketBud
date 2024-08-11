@@ -1,0 +1,14 @@
+.headerContainer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: .75rem .875rem;
+   background-color: white;
+}
+
+.headerTitle {
+   font-size: 18px;
+   font-weight: 600;
+   color: #484A4B;
+}

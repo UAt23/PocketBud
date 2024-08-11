@@ -5,11 +5,6 @@ import Transaction from '../Transaction/Transaction';
 import styles from './styles.scss';
 
 const TransactionList = () => {
-
-  // const callData = async () => {
-  //   // const {data, error} = await supabase.from('Category').select('*');
-  // };
-
   return (
     <View style={styles.wrapper}>
       <View style={styles.header}>

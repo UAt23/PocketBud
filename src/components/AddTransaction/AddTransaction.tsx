@@ -1,13 +1,27 @@
-import {Text, TextInput, View} from 'react-native';
+import {View} from 'react-native';
 import React from 'react';
 import {CustomText, Page} from '../common';
 import {Tab, TabView} from '@rneui/themed';
 import styles from './styles';
 import CustomInput from '../common/CustomInput/CustomInput';
 import CustomSelector from '../common/CustomSelector';
+import {useNavigation} from '@react-navigation/native';
 
 const AddTransaction = () => {
+  const navigation = useNavigation();
   const [index, setIndex] = React.useState(0);
+
+  const changePage = (type: string) => {
+    switch (type) {
+      case 'account':
+        break;
+      case 'categories':
+        navigation.navigate('categorySelection');
+        break;
+      default:
+        break;
+    }
+  };
 
   return (
     <Page>
@@ -33,8 +47,14 @@ const AddTransaction = () => {
         <TabView.Item>
           <View style={[styles.tabPage, index === 0 && styles.tabShow]}>
             <CustomInput label="Enter Amount" />
-            <CustomSelector label="Select Account" />
-            <CustomSelector label="Select Category" />
+            <CustomSelector
+              onPress={() => changePage('account')}
+              label="Select Account"
+            />
+            <CustomSelector
+              onPress={() => changePage('categories')}
+              label="Select Category"
+            />
             <CustomSelector label="Select Date" />
           </View>
         </TabView.Item>

@@ -1,0 +1,12 @@
+@import '../../../styles/common/common.scss';
+
+.pageCustom {
+   padding: 4px 14px;
+   @extend %base-class;
+
+}
+
+.listWrapper {
+   display: flex;
+   gap: .75rem;
+}

@@ -1,0 +1,19 @@
+.groupLabel {
+   padding-bottom: .5rem;
+   border-bottom-width: .1875rem;
+   border-bottom-color: #7294B6;
+}
+
+.groupWrapper {
+   display: flex;
+   gap: .5rem;
+   flex: 1;
+   padding: .625rem .75rem;
+   border-radius: .5rem;
+   margin-bottom: .75rem;
+}
+
+.categoryWrapper {
+   display: flex;
+   gap: .5rem;
+}
