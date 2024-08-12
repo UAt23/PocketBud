@@ -11,7 +11,6 @@ const HomeStack = ({navigation}: any) => {
       <Stack.Screen
         name="Home"
         options={{
-          headerMode: 'float',
           header: getHeader('PocketBud', () => navigation.toggleDrawer()),
         }}
         component={Home}

@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import {useNavigationState} from '@react-navigation/native';
 
 const getActiveRouteName = (state: any) => {
+  // console.log(state);
   const route = state && state.routes[state.index];
   if (route) {
     if (route?.state) {

@@ -6,19 +6,7 @@ import {getHeader} from '../../utils/functions';
 
 const Stack = createStackNavigator();
 
-const config = {
-  animation: 'spring',
-  config: {
-    stiffness: 1000,
-    damping: 500,
-    mass: 3,
-    overshootClamping: true,
-    restDisplacementThreshold: 0.01,
-    restSpeedThreshold: 0.01,
-  },
-};
-
-const AccountsStack = ({navigation}: any) => {
+const AddTransactionStack = ({navigation}: any) => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -27,11 +15,6 @@ const AccountsStack = ({navigation}: any) => {
       <Stack.Screen
         name="addTransaction"
         options={{
-          transitionSpec: {
-            open: config,
-            close: config,
-          },
-          headerMode: 'float',
           header: getHeader('PocketBud', () => navigation.toggleDrawer()),
         }}
         component={AddTransaction}
@@ -39,15 +22,10 @@ const AccountsStack = ({navigation}: any) => {
       <Stack.Screen
         name="categorySelection"
         options={{
-          transitionSpec: {
-            open: config,
-            close: config,
-          },
-          headerMode: 'float',
           header: getHeader(
             'Select Category',
-            () => navigation.goBack(),
-            'arrowleft',
+            () => navigation.navigate('addTransaction'),
+            'arrow-left',
           ),
         }}
         component={CategorySelection}
@@ -56,4 +34,4 @@ const AccountsStack = ({navigation}: any) => {
   );
 };
 
-export default AccountsStack;
+export default AddTransactionStack;

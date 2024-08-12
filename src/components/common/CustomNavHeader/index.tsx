@@ -1,7 +1,7 @@
 import {View, Text} from 'react-native';
 import React, {memo} from 'react';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from './styles';
 
 interface HeaderProps {
@@ -23,7 +23,7 @@ const CustomNavHeader = memo(
     return (
       <View style={styles.headerContainer}>
         <TouchableOpacity onPress={onPressLeft}>
-          <Icon name={iconLeftName} size={32} color="#484A4B" />
+          <Icon name={iconLeftName} size={36} color="#484A4B" />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>{title}</Text>
         <TouchableOpacity onPress={onPressRight}>

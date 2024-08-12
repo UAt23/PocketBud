@@ -12,3 +12,9 @@ export const fetchCategories = async () => {
   if (error) throw error;
   return data;
 };
+
+export const fetchGroups = async () => {
+  const {data, error} = await supabase.from('category_groups').select('*');
+  if (error) throw error;
+  return data;
+};
