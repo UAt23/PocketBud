@@ -7,6 +7,8 @@ interface PageProps extends ViewProps {
   borderRadius?: ViewStyle['borderRadius'];
   padding?: ViewStyle['padding'];
   margin?: ViewStyle['margin'];
+  width?: ViewStyle['width'] | string;
+  height?: ViewStyle['height'] | string;
   style?: ViewStyle;
 }
 
@@ -15,6 +17,8 @@ const Page: React.FC<PageProps> = ({
   borderRadius = 0,
   padding = 20,
   margin = 0,
+  width = '100%',
+  height = '100%',
   style = styles.pageContainer,
   children,
   ...rest
@@ -24,6 +28,8 @@ const Page: React.FC<PageProps> = ({
     borderRadius,
     padding,
     margin,
+    width,
+    height,
     ...style,
   };
 

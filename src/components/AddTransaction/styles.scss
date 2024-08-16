@@ -1,4 +1,4 @@
-.incomeButton {
+.expenseButton {
    border-color: #7294B6;
    border-width: 4px;
    border-right-width: 0;
@@ -6,7 +6,7 @@
    border-bottom-left-radius: 8px;
 }
 
-.expenseButton {
+.incomeButton {
    border-color: #7294B6;
    border-width: 4px;
    border-left-width: 0;
@@ -42,3 +42,27 @@
    opacity: 1;
 }
 
+.footer {
+   display: flex;
+   gap: .5rem;
+}
+
+.buttonWrapper {
+   height: 3.5rem;
+   border-radius: .5rem;
+}
+
+.createButton {
+   background-color: #F4D50B;
+}
+.cancelButton {
+   background-color: #E2E8F0;
+}
+
+.buttonText {
+   text-align: center;
+   margin: auto;
+   color: #3A506F;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
